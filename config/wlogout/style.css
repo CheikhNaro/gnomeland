@@ -1,0 +1,66 @@
+IUI* {
+	background-image: none;
+	background-color: transparent;	
+	border: none;
+	box-shadow: none;
+}
+
+window {
+	background-image: url('/home/akhi_yucef/Images/Wallpaper/wallpaper_1.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+button {
+  border-radius: 0px;
+  border: 0px solid transparent;
+  margin: 0px;
+  color: #FFFFFF;
+  font-size: 25px;
+  font-weight: bold;
+	background-color: rgba(0, 0, 0, 0.4);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 26%;
+	
+  transition: background-size 0.2s cubic-bezier(.55,0.0,.28,1.682),
+              background-color 0.2s ease;
+}
+
+
+ button:active, button:hover{
+	background-color: rgba(111, 131, 150, 0.6);
+	background-size: 35%;
+	outline-style: none;
+	border: none;
+}
+
+button:focus {
+ border: none;
+}
+
+#logout {
+  background-image: url("/usr/share/wlogout/assets/logout.png");
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+#lock {
+  background-image: url("/usr/share/wlogout/assets/lock.png");
+}
+
+#reboot {
+  background-image: url("/usr/share/wlogout/assets/reboot.png");
+}
+
+#shutdown {
+  background-image: url("/usr/share/wlogout/assets/shutdown.png");
+}
+
+#suspend {
+  background-image: url("/usr/share/wlogout/assets/suspend.png");
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
