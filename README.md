@@ -35,7 +35,7 @@ This repository contains themes, icons and GNOME settings (dconf) to personalize
 
    ```bash
    chmod +x install-dotfiles.sh
-   ./install-dotfiles.sh
+   ./install.sh
    ```
 
 ## Customization
