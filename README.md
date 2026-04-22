@@ -2,35 +2,60 @@ Gnomeland — Dotfiles for GNOME
 
 This repository contains themes, icons and GNOME settings (dconf) to personalize a GNOME desktop environment.
 
-Installation
+## Essential Dependencies
+
+### GNOME Extensions
+- **ArcMenu**: [https://extensions.gnome.org/extension/3628/arcmenu/](https://extensions.gnome.org/extension/3628/arcmenu/)
+- **Appindicator**: [https://extensions.gnome.org/extension/615/appindicator-support/](https://extensions.gnome.org/extension/615/appindicator-support/)
+- **Auto Accent color**: [https://extensions.gnome.org/extension/7502/auto-accent-colour/](https://extensions.gnome.org/extension/7502/auto-accent-colour/)
+- **Color picker**: [https://extensions.gnome.org/extension/3396/color-picker/](https://extensions.gnome.org/extension/3396/color-picker/)
+- **Just perfection**: [https://extensions.gnome.org/extension/3843/just-perfection/](https://extensions.gnome.org/extension/3843/just-perfection/)
+- **Overview Background**: [https://extensions.gnome.org/extension/5856/overview-background/](https://extensions.gnome.org/extension/5856/overview-background/)
+- **Static Workspace background**: [https://extensions.gnome.org/extension/8505/static-workspace-background/](https://extensions.gnome.org/extension/8505/static-workspace-background/)
+- **Top Bar Organizer**: [https://extensions.gnome.org/extension/4356/top-bar-organizer/](https://extensions.gnome.org/extension/4356/top-bar-organizer/)
+- **Unblank lock screen**: [https://extensions.gnome.org/extension/1414/unblank/](https://extensions.gnome.org/extension/1414/unblank/)
+- **Unite**: [https://github.com/hardpixel/unite-shell](https://github.com/hardpixel/unite-shell)
+- **User theme**: [https://extensions.gnome.org/extension/19/user-themes/](https://extensions.gnome.org/extension/19/user-themes/)
+
+### Packages
+- **dconf-editor**
+- **wlogout**
+- **ignition**: `flatpak install flathub io.github.flattool.Ignition`
+
+## Installation
 
 1. Clone this repository:
 
+   ```bash
    git clone https://github.com/CheikhNaro/gnomeland.git
    cd gnomeland
+   ```
 
 2. Make the installer executable and run it:
 
+   ```bash
    chmod +x install-dotfiles.sh
    ./install-dotfiles.sh
+   ```
 
-What the installer does
+## Customization
 
-- Copies themes from themes/ to ~/.themes
-- Copies icons from icons/ to ~/.icons
-- Copies the contents of config/ to ~/.config
-- For each *.conf file in extensions-settings/, the script runs dconf load into /org/gnome/shell/extensions/<name>/ (e.g. arcmenu.conf -> /org/gnome/shell/extensions/arcmenu/). Existing keys are backed up to ~/.config/dconf-backups/.
-- If a sync-theme.sh script is present in ~/.config/sync-theme/, the installer creates a ~/.config/autostart/sync-theme.desktop that runs it at login.
+The look and feel of the windows and the top bar are tailored to my personal preference:
 
-Path replacement
+- Windows without title bars.
+- Borderless windows and square corners (no rounded corners).
+- Windows without control buttons (minimize, maximize, close).
 
-The installer searches copied files and replaces exact occurrences of "/home/akhi-yucef" with the current user's $HOME, preventing broken absolute paths.
+You are free to modify this look by editing the "unite" section in the `gtk.css` files located in `config/gtk-3.0/` and `config/gtk-4.0/`.
 
-Notes and alternatives
+**Example:** To add rounded corners, change `border-radius: 0px;` to `15px` or `20px` in the `decoration, window, ...` block.
 
-- dconf load is the standard way to restore dconf dumps. If a .conf needs a different path, edit the script or load manually: dconf load /path/ < file.conf
-- Optionally, add a confirmation prompt before each dconf load for safer operation.
+### Keyboard Shortcuts
+- **ArcMenu Launcher**: Press `Alt + Space` to trigger the menu.
 
-Contributing
+### Marble Shell Theme
+You can also create your own Marble-shell theme with custom colors. Detailed instructions can be found in the original repository: [https://github.com/imarkoff/Marble-shell-theme](https://github.com/imarkoff/Marble-shell-theme)
+
+## Contributing
 
 Contributions are welcome. Open an issue or pull request on GitHub.
