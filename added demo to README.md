@@ -1,4 +1,9 @@
-Gnomeland — Dotfiles for GNOME
+Dotfiles for GNOMELAND
+
+
+
+https://github.com/user-attachments/assets/0f59bd67-35e5-4a39-8973-ea5e216c102e
+
 
 This repository contains themes, icons and GNOME settings (dconf) to personalize a GNOME desktop environment.
 
