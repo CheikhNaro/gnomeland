@@ -1,0 +1,9 @@
+/* UNITE windowDecorations */
+@import url('/home/akhi_yucef/.local/share/gnome-shell/extensions/unite@hardpixel.eu/styles/gtk3/buttons-right/always.css');
+/* windowDecorations UNITE */
+
+decoration, window, window.background, window.titlebar, .titlebar {
+border-radius: 0px;
+border: none;
+}
+

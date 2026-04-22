@@ -1,0 +1,19 @@
+# caches
+.cache/
+*.log
+*.tmp
+
+# system
+.DS_Store
+Thumbs.db
+
+# images lourdes (optionnel)
+*.psd
+
+# node (si jamais)
+node_modules/
+dist/
+build/
+
+# secrets
+.env

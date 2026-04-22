@@ -1,0 +1,77 @@
+/* UNITE windowDecorations */
+@import url('/home/akhi_yucef/.local/share/gnome-shell/extensions/unite@hardpixel.eu/styles/gtk4/buttons-right/always.css');
+/* windowDecorations UNITE */
+decoration, window, window.background, window.titlebar, .titlebar {
+border-radius: 0px;
+}
+window {
+    border: 0px solid transparent;
+}
+
+:root {
+    --tint-background: mix(var(--accent-color), #000000, 0.80);
+    --tint-bg-amount: 0.35; 
+
+    --window-bg-color: mix(#242424, var(--tint-background), var(--tint-bg-amount));
+
+    --view-bg-color: mix(#1e1e1e, var(--tint-background), var(--tint-bg-amount));
+
+    --headerbar-bg-color: mix(#303030, var(--tint-background), var(--tint-bg-amount));
+    --headerbar-backdrop-color: mix(#242424, var(--tint-background), var(--tint-bg-amount));
+
+    --sidebar-bg-color: mix(#303030, var(--tint-background), var(--tint-bg-amount));
+    --sidebar-backdrop-color: mix(#2a2a2a, var(--tint-background), var(--tint-bg-amount));
+    --sidebar-border-color: mix(rgb(0 0 0 / 36%), var(--tint-background), var(--tint-bg-amount));
+
+    --secondary-sidebar-bg-color: mix(#2a2a2a, var(--tint-background), var(--tint-bg-amount));
+    --secondary-sidebar-backdrop-color: mix(#272727, var(--tint-background), var(--tint-bg-amount));
+    --secondary-sidebar-border-color: mix(rgb(0 0 0 / 36%), var(--tint-background), var(--tint-bg-amount));
+    --secondary-sidebar-shade-color: rgb(0 0 0 / 25%);
+
+    --card-bg-color: mix(rgb(255 255 255 / 8%), var(--tint-background), var(--tint-bg-amount));
+
+    --overview-bg-color: mix(#242424, var(--tint-background), var(--tint-bg-amount));
+    --thumbnail-bg-color: mix(#383838, var(--tint-background), var(--tint-bg-amount));
+
+    --active-toggle-bg-color: mix(rgb(255 255 255 / 20%), var(--tint-background), var(--tint-bg-amount));
+
+    --dialog-bg-color: mix(#383838, var(--tint-background), var(--tint-bg-amount));
+
+    --popover-bg-color: mix(#383838, var(--tint-background), var(--tint-bg-amount));
+
+    --scrollbar-outline-color: mix(rgb(0 0 0 / 50%), var(--tint-background), var(--tint-bg-amount));
+    --border-color: mix(
+        color-mix(in srgb, currentColor var(--border-opacity), transparent),
+        var(--tint-background), var(--tint-bg-amount));
+}
+
+@define-color tint-background mix(var(--accent-color), #000000, 0.80);
+@define-color tint-bg-amount 0.35;
+@define-color window-bg-color: mix(#242424, @tint-background, @tint-bg-amount);
+
+@define-color view-bg-color: mix(#1e1e1e, @tint-background, @tint-bg-amount);
+
+@define-color headerbar-bg-color: mix(#303030, @tint-background, @tint-bg-amount);
+@define-color headerbar-backdrop-color: mix(#242424, @tint-background, @tint-bg-amount);
+
+@define-color sidebar-bg-color: mix(#303030, @tint-background, @tint-bg-amount);
+@define-color sidebar-backdrop-color: mix(#2a2a2a, @tint-background, @tint-bg-amount);
+@define-color sidebar-border-color: mix(rgb(0 0 0 / 36%), @tint-background, @tint-bg-amount);
+
+@define-color secondary-sidebar-bg-color: mix(#2a2a2a, @tint-background, @tint-bg-amount);
+@define-color secondary-sidebar-backdrop-color: mix(#272727, @tint-background, @tint-bg-amount);
+@define-color secondary-sidebar-border-color: mix(rgb(0 0 0 / 36%), @tint-background, @tint-bg-amount);
+@define-color secondary-sidebar-shade-color: rgb(0 0 0 / 25%);
+
+@define-color card-bg-color: mix(rgb(255 255 255 / 8%), @tint-background, @tint-bg-amount);
+
+@define-color overview-bg-color: mix(#242424, @tint-background, @tint-bg-amount);
+@define-color thumbnail-bg-color: mix(#383838, @tint-background, @tint-bg-amount);
+
+@define-color active-toggle-bg-color: mix(rgb(255 255 255 / 20%), @tint-background, @tint-bg-amount);
+
+@define-color dialog-bg-color: mix(#383838, @tint-background, @tint-bg-amount);
+
+@define-color popover-bg-color: mix(#383838, @tint-background, @tint-bg-amount);
+
+@define-color scrollbar-outline-color: mix(rgb(0 0 0 / 50%), @tint-background, @tint-bg-amount);
